@@ -1,4 +1,4 @@
-from loader import load_documents
+from src.ingestion.loader import load_documents
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 

@@ -1,7 +1,7 @@
 from langchain_community.vectorstores import FAISS
 
-from ingestion.chunking import split_documents
-from embeddings.embedding import load_embedding_model
+from src.ingestion.chunking import split_documents
+from src.embeddings.embedding import load_embedding_model
 
 def create_vector_store():
     """
@@ -13,4 +13,12 @@ def create_vector_store():
         documents=chunks,
         embedding=embedding_model
     )
+    vector_store.save_local("faiss_index")
     return vector_store
+
+if __name__ == "__main__":
+    print("Creating FAISS vector store...")
+
+    vector_store = create_vector_store()
+
+    print("Vector store created successfully!")
