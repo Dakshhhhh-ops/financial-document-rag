@@ -6,7 +6,6 @@ A Retrieval-Augmented Generation (RAG) application that lets you ask natural-lan
   <img src="docs/screenshot.png" alt="Financial Document RAG UI" width="800"/>
 </p>
 
-> Replace the screenshot above with an actual screenshot of your running app (save it at `docs/screenshot.png`).
 
 ---
 
@@ -106,8 +105,8 @@ cd financial-doc-rag
 
 ```bash
 cd backend
-python -m venv venv
-source venv/bin/activate      # On Windows: venv\Scripts\activate
+python -m venv fin-env
+source fin-env/bin/activate      # On Windows: fin-env\Scripts\activate
 pip install -r requirements.txt
 ```
 
@@ -127,8 +126,8 @@ uvicorn main:app --reload --port 8000
 
 ```bash
 cd ../frontend
-python -m venv venv
-source venv/bin/activate      # On Windows: venv\Scripts\activate
+python -m venv fin-env
+source fin-env/bin/activate      # On Windows: fin-env\Scripts\activate
 pip install -r requirements.txt
 streamlit run app.py
 ```
