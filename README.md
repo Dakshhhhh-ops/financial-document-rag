@@ -2,11 +2,6 @@
 
 A Retrieval-Augmented Generation (RAG) application that lets you ask natural-language questions about financial reports (10-Ks, annual reports, etc.) and get grounded, citation-backed answers — no more manually scrolling through 200-page PDFs.
 
-<p align="center">
-  <img src="docs/screenshot.png" alt="Financial Document RAG UI" width="800"/>
-</p>
-
-
 ---
 
 ## ✨ Features
